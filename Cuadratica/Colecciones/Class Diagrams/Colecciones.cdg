@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Colecciones">
+  <ClassDiagramComponents>
+    <Class name="HashSet" package="" visibility="public" xPosition="306.0" yPosition="515.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ArrayList" package="" visibility="public" xPosition="941.0" yPosition="595.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vector" package="" visibility="public" xPosition="1445.0" yPosition="405.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="copyInto" returnType="Object[]" visibility="public">
+          <Argument type="Object[]" name="anArray"/>
+        </Method>
+        <Method name="setSize" returnType="int" visibility="public">
+          <Argument type="int" name="newSize"/>
+        </Method>
+        <Method name="capacity" returnType="int" visibility="public"/>
+        <Method name="elements" returnType="Enumeration&lt;E&gt;" visibility="public"/>
+        <Method name="lastIndexOf" returnType="int" visibility="public">
+          <Argument type="Object" name="o"/>
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="indexOf" returnType="int" visibility="public">
+          <Argument type="Object" name="o"/>
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="elementAt" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="firstElement" returnType="E" visibility="public"/>
+        <Method name="lastElement" returnType="E" visibility="public"/>
+        <Method name="setElementAt" returnType="int" visibility="public">
+          <Argument type="E" name="obj"/>
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="removeElementAt" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="insertElementAt" returnType="int" visibility="public">
+          <Argument type="E" name="obj"/>
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="addElement" returnType="E" visibility="public">
+          <Argument type="E" name="obj"/>
+        </Method>
+        <Method name="removeElement" returnType="Object" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="removeAllElements" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HashMap" package="" visibility="public" xPosition="372.0" yPosition="792.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Hashtable" package="" visibility="public" xPosition="915.0" yPosition="823.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TreeMap" package="" visibility="public" xPosition="628.0" yPosition="1534.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TreeSet" package="" visibility="public" xPosition="49.0" yPosition="970.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="Collection" package="" visibility="public" xPosition="530.0" yPosition="175.0">
+      <Methods>
+        <Method name="add" returnType="E" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+        <Method name="remove" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="contains" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="size" returnType="int" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+        <Method name="toArray" returnType="Object[]" visibility="public"/>
+        <Method name="containsAll" returnType="Collection&lt;?&gt;" visibility="public">
+          <Argument type="Collection&lt;?&gt;" name="c"/>
+        </Method>
+        <Method name="addAll" returnType="Collection&lt;? extends E&gt;" visibility="public">
+          <Argument type="Collection&lt;? extends E&gt;" name="c"/>
+        </Method>
+        <Method name="removeAll" returnType="Collection&lt;?&gt;" visibility="public">
+          <Argument type="Collection&lt;?&gt;" name="c"/>
+        </Method>
+        <Method name="retainAll" returnType="Collection&lt;?&gt;" visibility="public">
+          <Argument type="Collection&lt;?&gt;" name="c"/>
+        </Method>
+        <Method name="clear" returnType="void" visibility="public"/>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="Set" package="" visibility="public" xPosition="148.0" yPosition="316.0">
+      <Methods/>
+    </Interface>
+    <Interface name="SortedSet" package="" visibility="public" xPosition="27.0" yPosition="439.0">
+      <Methods>
+        <Method name="comparator" returnType="Comparator" visibility="public"/>
+        <Method name="subSet" returnType="E" visibility="public">
+          <Argument type="E" name="fromElement"/>
+          <Argument type="E" name="toElement"/>
+        </Method>
+        <Method name="headSet" returnType="E" visibility="public">
+          <Argument type="E" name="toElement"/>
+        </Method>
+        <Method name="tailSet" returnType="E" visibility="public">
+          <Argument type="E" name="fromElement"/>
+        </Method>
+        <Method name="first" returnType="E" visibility="public"/>
+        <Method name="last" returnType="E" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="List" package="" visibility="public" xPosition="1135.0" yPosition="325.0">
+      <Methods>
+        <Method name="get" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="set" returnType="E" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="E" name="element"/>
+        </Method>
+        <Method name="indexOf" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="lastIndexOf" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="listIterator" returnType="ListIterator&lt;E&gt;" visibility="public"/>
+        <Method name="listIterator" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="subList" returnType="int" visibility="public">
+          <Argument type="int" name="fromIndex"/>
+          <Argument type="int" name="toIndex"/>
+        </Method>
+        <Method name="add" returnType="E" visibility="public">
+          <Argument type="int" name="index"/>
+          <Argument type="E" name="element"/>
+        </Method>
+        <Method name="remove" returnType="int" visibility="public">
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="trimToSize" returnType="void" visibility="public"/>
+        <Method name="ensureCapacity" returnType="int" visibility="public">
+          <Argument type="int" name="minCapacity"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Map" package="" visibility="public" xPosition="610.0" yPosition="498.0">
+      <Methods>
+        <Method name="size" returnType="int" visibility="public"/>
+        <Method name="isEmpty" returnType="boolean" visibility="public"/>
+        <Method name="containsKey" returnType="Object" visibility="public">
+          <Argument type="Object" name="key"/>
+        </Method>
+        <Method name="containsValue" returnType="Object" visibility="public">
+          <Argument type="Object" name="value"/>
+        </Method>
+        <Method name="get" returnType="Object" visibility="public">
+          <Argument type="Object" name="key"/>
+        </Method>
+        <Method name="put" returnType="V" visibility="public">
+          <Argument type="K" name="key"/>
+          <Argument type="V" name="value"/>
+        </Method>
+        <Method name="remove" returnType="Object" visibility="public">
+          <Argument type="Object" name="key"/>
+        </Method>
+        <Method name="clear" returnType="void" visibility="public"/>
+        <Method name="keySet" returnType="Set&lt;K&gt;" visibility="public"/>
+        <Method name="values" returnType="Collection&lt;V&gt;" visibility="public"/>
+        <Method name="equals" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="entrySet" returnType="Set&lt;Entry&gt;" visibility="public"/>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="SortedMap" package="" visibility="public" xPosition="594.0" yPosition="856.0">
+      <Methods>
+        <Method name="subMap" returnType="K" visibility="public">
+          <Argument type="K" name="fromKey"/>
+          <Argument type="K" name="toKey"/>
+        </Method>
+        <Method name="headMap" returnType="K" visibility="public">
+          <Argument type="K" name="toKey"/>
+        </Method>
+        <Method name="tailMap" returnType="K" visibility="public">
+          <Argument type="K" name="fromKey"/>
+        </Method>
+        <Method name="comparator" returnType="Comparator" visibility="public"/>
+        <Method name="firstKey" returnType="K" visibility="public"/>
+        <Method name="lastKey" returnType="K" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Iterator" package="" visibility="public" xPosition="832.0" yPosition="17.0">
+      <Methods>
+        <Method name="next" returnType="Object" visibility="public"/>
+        <Method name="hasNext" returnType="boolean" visibility="public"/>
+        <Method name="remove" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Iterable" package="" visibility="public" xPosition="572.0" yPosition="17.0">
+      <Methods>
+        <Method name="iterator" returnType="Iterator" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="NavigableSet" package="" visibility="public" xPosition="39.0" yPosition="664.0">
+      <Methods>
+        <Method name="lower" returnType="E" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+        <Method name="floor" returnType="E" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+        <Method name="ceiling" returnType="E" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+        <Method name="higher" returnType="E" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+        <Method name="pollFirst" returnType="E" visibility="public"/>
+        <Method name="pollLast" returnType="E" visibility="public"/>
+        <Method name="descendingSet" returnType="NavigableSet&lt;E&gt;" visibility="public"/>
+        <Method name="descendingIterator" returnType="Iterator&lt;E&gt;" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Stack" package="" visibility="public" xPosition="1476.0" yPosition="875.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="push" returnType="E" visibility="public">
+          <Argument type="E" name="item"/>
+        </Method>
+        <Method name="pop" returnType="E" visibility="public"/>
+        <Method name="peek" returnType="E" visibility="public"/>
+        <Method name="empty" returnType="boolean" visibility="public"/>
+        <Method name="search" returnType="Object" visibility="public">
+          <Argument type="Object" name="o"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="NavigableMap" package="" visibility="public" xPosition="465.0" yPosition="1053.0">
+      <Methods>
+        <Method name="lowerEntry" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="lowerKey" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="floorEntry" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="floorKey" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="ceilingKey" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="ceilingEntry" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="higherEntry" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="higherKey" returnType="K" visibility="public">
+          <Argument type="K" name="key"/>
+        </Method>
+        <Method name="untitledMethod1" returnType="void" visibility="public"/>
+        <Method name="firstEntry" returnType="Entry" visibility="public"/>
+        <Method name="lastEntry" returnType="Entry" visibility="public"/>
+        <Method name="pollFirstEntry" returnType="Entry" visibility="public"/>
+        <Method name="pollLastEntry" returnType="Entry" visibility="public"/>
+        <Method name="descendingMap" returnType="NavigableMap" visibility="public"/>
+        <Method name="descendingKeySet" returnType="NavigableSet&lt;K&gt;" visibility="public"/>
+        <Method name="subMap" returnType="boolean" visibility="public">
+          <Argument type="K" name="fromKey"/>
+          <Argument type="boolean" name="fromInclusive"/>
+          <Argument type="K" name="toKey"/>
+          <Argument type="boolean" name="toInclusive"/>
+        </Method>
+        <Method name="headMap" returnType="boolean" visibility="public">
+          <Argument type="K" name="toKey"/>
+          <Argument type="boolean" name="inclusive"/>
+        </Method>
+        <Method name="tailMap" returnType="boolean" visibility="public">
+          <Argument type="K" name="fromKey"/>
+          <Argument type="boolean" name="inclusive"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Vector" target="List"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="HashMap" target="Map"/>
+    <IsRelation name="is" source="List" target="Collection"/>
+    <IsRelation name="is" source="Collection" target="Iterable"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TreeMap" target="NavigableMap"/>
+    <IsRelation name="is" source="SortedMap" target="Map"/>
+    <IsRelation name="is" source="Set" target="Collection"/>
+    <IsRelation name="is" source="NavigableSet" target="SortedSet"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ArrayList" target="List"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Hashtable" target="Map"/>
+    <IsRelation name="is" source="SortedSet" target="Set"/>
+    <IsRelation name="is" source="Stack" target="Vector"/>
+    <UseRelation name="" source="Iterable" target="Iterator" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="HashSet" target="Set"/>
+    <IsRelation name="is" source="NavigableMap" target="SortedMap"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="TreeSet" target="NavigableSet"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
